@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!--createBean-->
+ <bean id="myCouch" 
+ class="project1.TrackCoach"></bean>
+ <!-- end createBean -->
+    <!--Constructor injection-->
+ <bean id="injectedClass" 
+ class="project1.InjectedClass">
+ </bean>
+  <bean id="dependancyInjection" class="project1.DependancyCoach"
+ 
+  > 
+  <constructor-arg  ref="injectedClass"></constructor-arg>
+ </bean>
+ 
+ <!-- end construoctor injection -->
+ 
+ <!-- setter injection -->
+ <bean id="mycarRepairer" class="setter_injection.CarRepairer"></bean>
+ <bean id="Car" class="setter_injection.Car">
+ <property name="carRepairer" ref="mycarRepairer"></property>
+ </bean>
+ 
+</beans>

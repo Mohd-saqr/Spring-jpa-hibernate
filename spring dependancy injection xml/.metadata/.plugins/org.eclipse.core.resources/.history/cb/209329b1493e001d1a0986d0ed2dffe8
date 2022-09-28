@@ -1,0 +1,14 @@
+package bea_scope;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class BeanSocopeDemo {
+
+	public static void main(String[] args) {
+	
+`	// load the spring configuration file
+
+ ClassPathXmlApplicationContext context = new  ClassPathXmlApplicationContext("")
+	}
+
+}

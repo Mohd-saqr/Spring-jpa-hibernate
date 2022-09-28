@@ -1,0 +1,17 @@
+package project1;
+
+public class DependancyCoach implements Coach{
+  
+	String str ="";
+	public DependancyCoach (InjectedClass inject){
+		str=inject.getString();
+	}
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return str;
+	}
+	
+	
+
+}

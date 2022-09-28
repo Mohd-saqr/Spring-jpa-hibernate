@@ -1,0 +1,17 @@
+package project1;
+
+public class DependancyCoach implements Coach{
+  
+	
+	public DependancyCoach (InjectedClass inject){
+		
+	}
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "Dependancy injection examble";
+	}
+	
+	
+
+}
